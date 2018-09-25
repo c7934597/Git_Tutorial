@@ -38,24 +38,14 @@ vim ~/.ssh/id_rsa.github.pub
 由於每個託管商的倉庫都有唯一的後綴，比如 Github的是 git@github.com:*，所以可以這樣測試：
 
 ➜ ~ ssh -T git@github.com
-Hi xirong! You've successfully authenticated, but GitHub does not provide shell access.
+
+Hi c7934597! You've successfully authenticated, but GitHub does not provide shell access.
+
 ➜ ~ ssh -T git@gitlab.dev
-Welcome to GitLab, xirong.liu!
+
+Welcome to GitLab, 02445!
+
 看到這些 Welcome 信息，說明就是 OK的了。
-
-# 查看託管倉庫列表
-
-➜ cd ~/.ssh
-➜ ls -la
-total 24
-drwxr-xr-x 1 02445 1049089    0 九月 25 17:35 ./
-drwxr-xr-x 1 02445 1049089    0 九月 25 17:35 ../
--rw-r--r-- 1 02445 1049089   64 九月 25 17:06 config
--rw-r--r-- 1 02445 1049089 1679 九月 25 16:56 id_rsa
--rw-r--r-- 1 02445 1049089 1679 九月 25 16:56 id_rsa.github
--rw-r--r-- 1 02445 1049089  400 九月 25 16:56 id_rsa.github.pub
--rw-r--r-- 1 02445 1049089  409 九月 25 16:56 id_rsa.pub
--rw-r--r-- 1 02445 1049089  407 九月 25 17:06 known_hosts
 
 # 最後加上remote
 git remote add origin https://github.com/c7934597/ASP.NET-CORE-2.git
