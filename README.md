@@ -49,3 +49,6 @@ Welcome to GitLab, 02445!
 
 # 最後加上remote
 git remote add origin https://github.com/c7934597/ASP.NET-CORE-2.git
+
+# 參考資料來源
+https://github.com/xirong/my-git/blob/master/use-gitlab-github-together.md
